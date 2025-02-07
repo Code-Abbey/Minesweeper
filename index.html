@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Page Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <!-- Home Screen -->
+    <div id="home-screen">
+        <h1>Minesweeper</h1>
+        <p>Avoid the mines and clear the board!</p>
+        <button id="start-game-btn">Start Game</button> <!-- Button to start game -->
+        <button id="about-btn">About</button> <!-- Button to show game instructions -->
+    </div>
+
+    <!-- About Screen (Game Instructions) -->
+    <div id="about-screen" class="hidden">
+        <h1>How to Play</h1>
+        <p>
+            - Click on a tile to reveal it.<br>
+            - If you reveal a bomb, you lose.<br>
+            - Numbers indicate how many bombs are adjacent to that tile.<br>
+            - Right-click (or long-press on mobile) to place a flag on suspected bombs.<br>
+            - Clear all safe tiles to win!
+        </p>
+        <button id="back-to-home">Back</button> <!-- Button to return to home screen -->
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="hidden">
+        <h1>Minesweeper</h1>
+
+        <!-- Game Controls -->
+        <div id="controls">
+            <!-- Grid Size Selection -->
+            <label for="grid-size">Grid Size:</label>
+            <select id="grid-size">
+                <option value="10" selected>10x10</option>
+                <option value="12">12x12</option>
+                <option value="14">14x14</option>
+            </select>
+
+            <!-- Difficulty Selection -->
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy" selected>Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <!-- Game Board (Grid will be generated dynamically using JavaScript) -->
+        <div id="game-board"></div>
+
+        <!-- Game Status Message (Win/Lose) -->
+        <p id="game-message"></p>
+
+        <!-- Final Score Display (Hidden initially) -->
+        <p id="final-score" class="hidden">Final Score: <span id="score-value">0</span></p>
+
+        <!-- Restart Button (Hidden initially) -->
+        <button id="restart-btn" class="hidden">Restart</button>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
