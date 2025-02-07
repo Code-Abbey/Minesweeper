@@ -66,7 +66,7 @@ This project helped me improve my **JavaScript skills**, particularly in **user 
 ## **Technologies Used**  
 - **HTML5** – Structure of the game  
 - **CSS3** – Styling and layout improvements  
-- **JavaScript (ES6+)** – Game logic, DOM manipulation, and interactivity  
+- **JavaScript** – Game logic, DOM manipulation, and interactivity  
 
 ---
 
